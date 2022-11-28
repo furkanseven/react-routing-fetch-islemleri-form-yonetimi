@@ -1,0 +1,95 @@
+.login-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:3% auto;
+}
+.login-card{
+    width: 450px;
+    background: rgba(0, 173, 196, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+.login-card::before{
+    content:'';
+    position: absolute;
+    border-radius: 10px;
+    background:rgba(177, 0, 133, 0.212);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+}
+
+.login-card a{
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-card a:hover{
+    text-decoration: underline;
+}
+.login-card-header{
+    margin-bottom: 2rem;
+}
+.login-card-header h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.login-card-form .form-item{
+    position: relative;
+}
+
+.login-card-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-card-footer{
+   margin-top: 1.5rem;
+   font-size: .8rem;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"]{
+    outline: none;
+    padding: .5rem .5rem;
+    padding-left: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 100px;
+    width: 85%;
+
+}
+
+
+.login-card-form button{
+    background-color: rgb(94, 90, 90);
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.login-card-form button:hover{
+    background-color: rgba(20, 19, 19, 0.8);
+    cursor: pointer;
+}
